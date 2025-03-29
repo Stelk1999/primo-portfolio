@@ -1,0 +1,248 @@
+:root {
+    --colore-sezione-principale: #984447;
+    --colore-scritte-menu: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--colore-sezione-principale);
+    padding: 1rem 2rem;
+}
+
+.menu div {
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    height: 50px;
+    object-fit: contain;
+}
+ul {
+    list-style: none;
+}
+
+.menu-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.menu-list a {
+    padding: 2rem;
+    font-size: 2rem;
+    display: block;
+    text-decoration: none;
+    color: var(--colore-scritte-menu);
+    
+}
+
+.menu-list a:hover {
+   background-color: var(--colore-sezione-principale);
+}
+
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+h1 {
+    font-size: 8rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+.project-tile h2 {
+    font-size: 3.7rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color: #3a3d40;
+    color: white;
+}
+.project-tile {
+    background: var(--colore-sezione-principale);
+    padding: 10rem 2rem;
+    
+}
+
+.sottotitolo {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--colore-sezione-principale);
+}
+ .griglia-progetti img {
+    max-width: 100%;
+  width: 100%;
+  height: 410px;
+  object-fit:cover;
+  display: block;
+
+ }
+
+ .griglia-progetti {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    margin-top: 40px;
+    row-gap: 2rem;
+    column-gap:30px;
+ }
+
+a p {
+    padding: 10px;
+    text-align: center;
+}
+
+.griglia-progetti a {
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+    box-shadow: 2px 2px 2px #3a3d40aa;
+}
+
+.griglia-progetti a p {
+    background-color:#3a3d40;
+}
+.code {
+    transition: color 0.3s;
+}
+.griglia-progetti a:hover .code{
+    color: var(--colore-sezione-principale);
+}
+h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 30px;
+}
+.sezione-contatti {
+    padding: 5rem;
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+.link-contatti {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.link-contatti i {
+margin-right: 8px;
+font-size: 35px;
+}
+
+.link-contatti a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    
+}
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  border-top: 4px solid var(--colore-sezione-principale);
+  color: white;
+}
+
+.link-contatti a:hover {
+    transform: translateY(8px);
+}
+
+@media screen and (max-width: 499px) {
+    .link-contatti {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .link-contatti a {
+        width: 150px;
+    }
+    .welcome-section {
+        padding: 20px;
+    }
+    .welcome-section h1 {
+        font-size: 6rem;
+    }
+    .menu {
+        justify-content: center;
+    }
+    .menu-list {
+        margin-right: 0;
+    }
+}
+/*
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div {
+        line-height: 0.88;
+        justify-content: center;
+        height: 100vh;
+        width: 120vw;
+        overflow: hidden;
+        margin-left: -100px;
+       
+    }
+
+    div h1 {
+        font-size: 360px;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+        margin-top: -65px;
+        margin-left: 20px;
+    }
+
+    div h2 {
+        font-size: 360px;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+        margin-left: -6px;
+    }
+    div h3 {
+        font-size: 360px;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+    }
+*/
